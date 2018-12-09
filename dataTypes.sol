@@ -42,4 +42,16 @@ contract DataTypes {
     }
     
     uint[10] myFixedArr;
+
+    struct Account {
+        uint balance;
+        uint dailyLimit;
+    }
+
+    Account myAccount;
+
+    function structFunc() public {
+        myAccount.balance;
+        myAccount.dailyLimit = 100;
+    }
 }
